@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<application id="BMV-Lib-System" mode="Debug">
+	<!-- alias definitions and namespace usings <paths> <alias id="myalias" 
+		path="./lib" /> <using namespace="Application.common.*" /> </paths> -->
+
+	<paths>
+		<using namespace="System.I18N.*" />
+		<using namespace="System.Web.UI.ActiveControls.*" />
+	</paths>
+
+	<!-- configurations for modules -->
+	<modules>
+		<module id="Session" class="Application.classes.Session.SessionDb" UseCustomStorage="true" />
+		<module id="security" class="TSecurityManager" EncryptionKey="BMVLibSysCool" ValidationKey="bfb9e1b24ba6308e39495a4a78f35d70" />
+		<module id="request" class="THttpRequest" UrlManager="friendly-url" />
+		<module id="friendly-url" class="System.Web.TUrlMapping" EnableCustomUrl="true" UrlPrefix="/">
+		
+			<!-- FrontEnd:: static page -->
+			<url ServiceParameter="FrontEnd.CMS.FAQ.HelpController" pattern="help.html"/>
+			<url ServiceParameter="FrontEnd.CMS.AboutUs.AboutUsController" pattern="aboutus.html"/>
+			<url ServiceParameter="FrontEnd.CMS.TnC.TnCController" pattern="tnc.html" />
+			
+			<!-- FrontEnd:: login page -->
+			<url ServiceParameter="FrontEnd.Login.LoginController" pattern="login.html" />
+			
+			<!-- FrontEnd:: logout page -->
+			<url ServiceParameter="FrontEnd.Logout.LogoutController" pattern="logout.html" />
+			
+			<!-- FrontEnd:: user page -->
+			<url ServiceParameter="FrontEnd.User.UserController" pattern="user.html" />
+			
+			<!-- FrontEnd:: mybookshelf page -->
+			<url ServiceParameter="FrontEnd.User.UserController" pattern="mybookshelf.html" />
+			
+			<!-- FrontEnd:: product listing page -->
+			<url ServiceParameter="FrontEnd.Products.ProductsController" pattern="products/{languageId}/{productTypeId}" parameters.languageId="\d+" parameters.productTypeId="\d+" />
+			<url ServiceParameter="FrontEnd.Products.ProductsController" pattern="products/{languageId}/{productTypeId}/{cateId}" parameters.languageId="\d+" parameters.productTypeId="\d+" parameters.cateId="\d+"/>
+			<url ServiceParameter="FrontEnd.Products.ProductsController" pattern="products/category/{cateid}" parameters.cateid="\d+" />
+			<url ServiceParameter="FrontEnd.Products.ProductsController" pattern="products/search/category/{cateid}/{searchtext}" parameters.cateid="\d+" parameters.searchtext=".+"/>
+			<url ServiceParameter="FrontEnd.Products.ProductsController" pattern="products/search/{searchtext}" parameters.searchtext=".+" />
+			
+			<!-- FrontEnd:: product details page -->
+			<url ServiceParameter="FrontEnd.ProductDetails.ProductDetailsController" pattern="product/{id}/" parameters.id="\d+" />
+			
+			<!-- FrontEnd:: product borrow:reauth page -->
+			<url ServiceId="reauth" ServiceParameter="" pattern="reauth.html" />
+			
+			<!-- asset service -->
+			<url ServiceId="asset" ServiceParameter="" pattern="asset/{method}" parameters.method="get" />
+			
+			<!-- *********************************************************************************************** -->
+			<!-- Library Admin Page                                                                              -->
+			<!-- *********************************************************************************************** -->
+			
+			<!-- LibAdminPage:: home -->
+			<url ServiceParameter="LibAdmin.Home.HomeController" pattern="libadmin/" />
+			
+			<!-- LibAdminPage:: items / products -->
+			<url ServiceParameter="LibAdmin.Products.ListController" pattern="libadmin/items.html" />
+			
+			<!-- LibAdminPage:: orders -->
+			<url ServiceParameter="LibAdmin.Orders.List.ListController" pattern="libadmin/orders.html" />
+			
+			<!-- LibAdminPage:: orders details page -->
+			<url ServiceParameter="LibAdmin.Orders.Details.ItemController" pattern="libadmin/order/{id}.html"  parameters.id="\d+" />
+			
+			<!-- LibAdminPage:: statics page -->
+			<url ServiceParameter="LibAdmin.Statics.Home.Controller" pattern="libadmin/statics.html"/>
+			
+			<!-- LibAdminPage:: statics page -->
+			<url ServiceParameter="LibAdmin.Statics.LibraryViews.StaticsController" pattern="libadmin/statics/libraryviews.html"/>
+			
+			<!-- *********************************************************************************************** -->
+			<!-- Admin Page                                                                                      -->
+			<!-- *********************************************************************************************** -->
+			
+			<!-- AdminPage:: home -->
+			<url ServiceParameter="Admin.Home.HomeController" pattern="admin/" />
+			
+			<!-- AdminPage:: product -->
+			<url ServiceParameter="Admin.Product.AdminProductController" pattern="admin/product" />
+			<url ServiceParameter="Admin.BulkloadProducts.BulkloadProductsController" pattern="admin/bulkloadproducts.html" />
+			
+			<!-- AdminPage:: supplier -->
+			<url ServiceParameter="Admin.Supplier.AdminSupplierController" pattern="admin/supplier.html" />
+			
+			<!-- AdminPage:: library -->
+			<url ServiceParameter="Admin.Library.AdminLibraryController" pattern="admin/library.html" />
+			
+			<!-- AdminPage:: test comm -->
+			<url ServiceParameter="Admin.ComTester.ComTesterController" pattern="admin/testcoms.html" />
+			
+			<!-- AdminPage:: logs -->
+			<url ServiceParameter="Admin.System.Logs.LogsController" pattern="admin/logs.html" />
+			
+			<!-- AdminPage:: test sip -->
+			<url ServiceParameter="Admin.SIPTester.SIPTesterController" pattern="admin/testsip.html" />
+			
+			<!-- AdminPage:: useraccount -->
+			<url ServiceParameter="Admin.System.Users.Edit.Controller" pattern="admin/libadminuser/{libraryId}/{userId}.html" parameters.libraryId="\d+"  parameters.userId="new|\d+"/>
+		</module>
+
+		<module id="globalization" class="TGlobalization">
+			<translation type="XLIFF" source="Application.messages"	marker="@@" autosave="true" cache="true" />
+		</module>
+	</modules>
+
+	<!-- configuration for available services -->
+	<services>
+		<service id="page" class="TPageService" DefaultPage="FrontEnd.Home.HomeController">
+		    <pages MasterClass="Application.layout.FrontEnd.PageLayout" Theme="default" />
+			<modules>
+				<module id="auth" class="Application.classes.WebUser.AuthManager" UserManager="users" ReturnUrl="/" LoginPage="FrontEnd.Login.LoginController" AuthExpire="3600" />
+				<module id="users" class="Application.classes.WebUser.WebUserManager" />
+			</modules>
+		</service>
+
+		<service id="asset" class="Application.pages.FrontEnd.Asset.AssetController"></service>
+		<service id="reauth" class="Application.pages.FrontEnd.ReAuth.ReAuthController"></service>
+		<service id="soap" class="System.Web.Services.TSoapService">
+			<soap id="webauth" provider="Application.classes.Soap.WebAuth" />
+		</service>
+	</services>
+	<!-- application parameters -->
+	<parameters>
+		<parameter id="AppTitle" value="BMV eResource Interface" />
+		<parameter id="AppVersion" value="1.0.0" />
+	</parameters>
+
+</application>

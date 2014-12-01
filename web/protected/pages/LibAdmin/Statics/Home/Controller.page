@@ -1,0 +1,23 @@
+<com:TContent ID="MainContent">
+<com:TCallback ID="getStatsBtn" onCallback="getStats" />
+<div class="pagewrapper libadminpage homepage">
+	<h4>Statics Dashboard for: <%= Core::getLibrary()->getName() %></h4>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<iframe src="/libadmin/statics/libraryviews.html" id="iframe1" marginheight="0" frameborder="0" width='100%' height="400px" scrolling='no' ></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<div class="panel panel-default">
+				<div class="panel-heading"><strong id="total-count">0</strong> Items statics</div>
+				<div class="table-responsive">
+					<table class="table table-hover table-striped" id="top-viewed"></table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</com:TContent>

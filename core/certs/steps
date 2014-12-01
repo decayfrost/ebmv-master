@@ -1,0 +1,32 @@
+1. Generate keys and certificate: To generate a pair of private key and public Certificate Signing Request (CSR) for a webserver, "server", use the following command :
+
+    openssl req -nodes -newkey rsa:2048 -keyout ebmv.key -out ebmv.csr
+    
+    Country Name (2 letter code) [AU]: AU
+    State or Province Name (full name) [Some-State]: .
+    Locality Name (eg, city) []: .
+    Organization Name (eg, company) [Internet Widgits Pty Ltd]: Books Music & Videos
+    Organizational Unit Name (eg, section) []: Technology
+    Common Name (eg, YOUR name) []: ebmv.com.au
+    Email Address []:.
+    
+    A challenge password []: 
+    An optional company name []:
+    
+    
+2. unzip 2b3f2afcf560a6.zip
+
+3. mkdir /etc/ssl/ssl.key
+
+4. mv 2b3f2afcf560a6/* /etc/pki/tls/certs/
+
+5. mv ebmv.key /etc/ssl/ssl.key/
+
+6. vi /etc/httpd/conf.d/ssl.conf
+    change: 
+    SSLEngine on
+    SSLCertificateKeyFile /etc/ssl/ssl.key/ebmv.key
+    SSLCertificateFile /etc/pki/tls/certs/2b3f2afcf560a6.crt
+    SSLCertificateChainFile /etc/pki/tls/certs/gd_bundle.crt
+    
+7 service httpd restart

@@ -1,0 +1,46 @@
+.productImportWrapper .row .inlineblock {
+	vertical-align: top;
+}
+.productImportWrapper .fieldDiv{
+	padding: 5px;
+}
+.productImportWrapper .title{
+	display: block;
+	font-size: 10px;
+	color: #aaa;
+}
+.productImportWrapper .title .btns{
+	float: right;
+}
+.productImportWrapper .field{
+	display: block;
+}
+.productImportWrapper .field [importinfo] {
+	width: 150px;
+}
+
+.productImportWrapper .inProgressWrapper {
+	width: 760px;
+}
+
+.productImportWrapper .inProgressWrapper .inProgressDiv{
+	padding: 5px;
+	background: black;
+	color: white;
+	font-size: 10px;
+	overflow: scroll;
+	height: 400px;
+}
+.productImportWrapper .inProgressWrapper .inProgressDiv .row.even {
+	background: #444444;
+}
+.productImportWrapper .inProgressWrapper .inProgressDiv .row .col {
+	vertical-align: top;
+}
+.productImportWrapper .inProgressWrapper .inProgressDiv .row .logTime {
+	font-size: 9px;
+	width: 60px;
+}
+.productImportWrapper .inProgressWrapper .inProgressDiv .row .logResult {
+	width: 650px;
+}

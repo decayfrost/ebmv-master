@@ -1,0 +1,13 @@
+<com:TContent ID="MainContent">
+	<div class="pagewrapper adminpage productpage">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title">
+				    <span id='total_no_of_items'>0</span> product(s) found:
+		        </div>
+		    </div>
+		    <div id='allProductDiv' class="panel-body list-group">
+		    </div>
+		</div>
+	</div>
+</com:TContent>

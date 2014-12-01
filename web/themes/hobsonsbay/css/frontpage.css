@@ -1,0 +1,70 @@
+.header .navbar {
+	border: none;
+	box-shadow: none;
+	background: #fff;
+}
+.header .navbar-default .navbar-nav.navbar-right > li > a {
+	color: #166589;
+}
+.header .navbar-default .navbar-nav > li > a:hover,
+.panel.nodefault > .panel-heading,
+.panel.nodefault > .panel-heading .btn.dropdown-toggle {
+	background: #009587 ;
+	color: #fff;
+    filter: none;
+}
+.header .navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.nodefault.prolistshowcase .langlist .langitem a {
+	color: #fff;
+}
+.nodefault.prolistshowcase .langlist .langitem.active a,
+.nodefault.prolistshowcase .langlist .langitem a:hover {
+	background: #fff;
+	color: #009587 ;
+}
+
+.header #topmenulist {
+	background: #166589;
+}
+.header #topmenulist .navbar-nav > .active > a, 
+.header #topmenulist .navbar-nav > .active > a:focus,
+.header #topmenulist .navbar-nav > li > a:focus {
+    color: #009587 ;
+}
+
+.header #topmenulist .navbar-nav > .active > a:hover, 
+.header #topmenulist .navbar-nav > li > a:hover {
+	background: #009587 ;
+	color: #fff;
+}
+
+.logo {
+	margin: 10px 0 0 0;
+	height: 65px;
+	vertical-align: bottom;
+}
+.logo .media-object {
+	width: auto;
+	height: 60px;
+}
+.header .media-body.title{
+	display:none;
+}
+
+.topmenu {
+	margin: 10px 0 0 0;
+}
+
+.footer {
+	background: #262626;
+	color: #fff;
+}
+.footer a {
+	color: #fff;
+}
+.footer a:hover {
+	color: #ccc;
+}

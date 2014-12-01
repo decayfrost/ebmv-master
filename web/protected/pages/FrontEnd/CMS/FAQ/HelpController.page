@@ -1,0 +1,9 @@
+<com:TContent ID="MainContent">
+	<div class="pageWrapper helppage">
+		<div class="row">
+			<div class="col-sm-3" id="topQs"></div>
+			<div class="col-sm-9" id="questionlist"></div>
+		</div>
+	</div>
+	
+</com:TContent>

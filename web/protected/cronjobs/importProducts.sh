@@ -1,0 +1,2 @@
+/usr/bin/php /var/www/ebmv/web/protected/cronjobs/ImportProduct_Run.php all 2,3,4,5,7,9 all > /tmp/productImport_`date +"%d_%b_%y"`.log
+/usr/bin/php /var/www/ebmv/web/protected/cronjobs/AutoReturnExpiredItems.php > /tmp/autoExpiryShelfItems_`date +"%d_%b_%y"`.log

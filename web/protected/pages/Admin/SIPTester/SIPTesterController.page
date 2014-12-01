@@ -1,0 +1,43 @@
+<com:TContent ID="MainContent">
+<com:TCallback ID="testBtn" OnCallback="page.testSIP" />
+<div class="pagewrapper adminpage siptesterpage container">
+	<div class="page-header">
+		<h4>SIP2 Tester:</h4>
+		<small class="text-justify">This tool is to enable us to be able to communicate with a library's integrated library system (ILS) via 3M's SIP2 (Standard Interchange Protocol).<br />
+		This project is a work in progress, and as such there may be certain features that do not work correctly. You can find the current stable version under the source tab, or download the current stable code here.<br />
+		This example works against a server that does not require a login step. It is trivial to add if needed by your ILS.</span>
+		</small>
+	</div>
+	<div>
+		<div class="form-inline info-panel" role="form">
+			<div class="form-group">
+				<div class="input-group" title="SIP server information">
+					<div class="input-group-addon">Server</div>
+			      	<input type="text" class="form-control" sip_request="Server" placeholder="192.168.1.1:8213" required >
+			    </div>
+			</div>
+			<div class="form-group">
+				<div class="input-group" title="Patron">
+					<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+			      	<input type="text" class="form-control" sip_request="patron" placeholder="patron username" required >
+			    </div>
+			</div>
+			<div class="form-group">
+				<div class="input-group" title="Patron Password">
+					<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+			      	<input type="text" class="form-control" sip_request="patronpwd" placeholder="patron password" required >
+			    </div>
+			</div>
+			<div class="form-group">
+				<div class="input-group" title="Location code">
+					<div class="input-group-addon">Location</div>
+			      	<input type="text" class="form-control" sip_request="siplocation" placeholder="[optional] location code">
+			    </div>
+			</div>
+			<span class="btn btn-primary" onclick="pageJs.testSIP(this);" data-loading-text="testing ...">test now</span>
+		</div>
+	</div>
+	<br /><br />
+	<div id="resultdiv"></div>
+</div>
+</com:TContent>

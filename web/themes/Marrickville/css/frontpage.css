@@ -1,0 +1,37 @@
+.header .navbar-default,
+.panel.nodefault > .panel-heading,
+.panel.nodefault > .panel-heading .btn.dropdown-toggle,
+#catelist .list-group-item {
+    background: #5CAFDB;
+    color: #fff;
+    filter: none;
+}
+.header .navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.header #topmenulist {
+	background: #EC7F3A;
+}
+
+.header #topmenulist .navbar-nav > .active > a, 
+.header #topmenulist .navbar-nav > .active > a:focus,
+.header #topmenulist .navbar-nav > li > a:focus {
+    color: #EC7F3A;
+}
+
+#catelist > .list-group-item:hover,
+.header #topmenulist .navbar-nav > .active > a:hover, 
+.header #topmenulist .navbar-nav > li > a:hover {
+	background: #EC7F3A;
+}
+
+.logo {
+	margin: 10px 0 0 0;
+	height: 70px;
+	vertical-align: bottom;
+}
+
+.topmenu {
+	margin: 10px 0 0 0;
+}

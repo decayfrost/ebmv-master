@@ -1,0 +1,40 @@
+<com:TContent ID="MainContent">
+<com:Application.controls.FancyBox.FancyBox />
+<com:TCallback ID="getItemsBtn" OnCallback="Page.getItems" />
+<com:TCallback ID="getOrderSummaryBtn" OnCallback="Page.getOrderSummary" />
+<com:TCallback ID="orderProductBtn" OnCallback="Page.orderProduct" />
+<div class="pagewrapper libadminpage products">
+	<div class="row">
+		<div class="col-sm-9">
+			<div class="well well-sm">
+				<div class="row">
+	            	<div class="col-xs-12">
+						<div class="input-group">
+							<input type="search" class="form-control" id="searchtxt" 
+								placeholder="Search by title, author or ISBN"
+								onkeydown="return pageJs.keydown(event, function(){ $('searchbtn').click();})"
+							/>
+							<span class="input-group-btn">
+								<span class="btn btn-default" id='searchbtn' OnClick="pageJs.searchProducts($F('searchtxt'))" title="搜索/搜索/Search">
+									<span class="glyphicon glyphicon-search"></span>
+								</span>
+							</span>
+						</div>
+	            	</div>
+            	</div>
+			</div>
+			<h4>Found (<span id="item-total-count">0</span>) books: </h4>
+			<div id="item-list"></div>
+		</div>
+		<div class="col-sm-3">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<a href="javascript: void(0);" class="panel-title" id="my-cart">My Cart: </a>
+					<span class="pull-right" id="order-btn"></span>
+				</div>
+				<div class="list-group" id="current-order-summary"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</com:TContent>

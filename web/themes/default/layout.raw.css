@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+}
+* {
+    margin: 0;
+}
+
+.infobox {
+	padding: 10px;
+}
+
+.dropdown-menu.extra-long {
+	min-width: 260px;
+}
+
+.topmenu .nav{
+	text-align: right;
+}
+.iconbtn .glyphicon,
+.iconbtn .btnname{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+.iconbtn .glyphicon {
+	margin-left: 4px;
+}
+.iconbtn .btnname small {
+	display: block;
+	font-size: 9px;
+	line-height: 0px;
+	margin: 2px 0 0 0;
+	
+}
+.iconbtn .en {
+	text-align: right;
+	font-size: 9px;
+}
+
+
+.nodefault.panel .panel-heading {
+	padding: 10px 15px 0;
+}
+
+.nodefault.prolistshowcase .panel-heading small {
+	padding: 0 0 0 8px;
+	font-size: 7px;
+	text-transform: uppercase;
+}
+
+.nodefault.panel .panel-heading {
+	height: 40px;
+}
+
+.nodefault.panel .panel-heading .title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.nodefault.panel .panel-heading .rightbtns {
+	padding: 0px 4px;
+	text-align: right;
+}
+
+.nodefault.panel .panel-heading [data-toggle="dropdown"] {
+	padding: 0px 5px;
+}
+
+.nodefault.panel .panel-heading .dropdown-menu {
+	min-width: 40px;
+}
+
+.nodefault.panel .panel-heading .nav-tabs {
+	border-bottom: medium none;
+}
+
+.nodefault.panel .panel-heading .nav-tabs>li>a {
+	padding: 4px 10px;
+}
+
+.nodefault.thumbnail {
+	position: relative;
+}
+.nodefault.thumbnail img {
+	height: 200px;
+}
+.nodefault.thumbnail .caption {
+    border: 0 none;
+    bottom: 5px;
+    left: 5px;
+    position: absolute;
+    background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;
+    opacity: 0.6;
+    width: 95%;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.nodefault.row {
+	margin: 0 0 8px 0;
+}
+.nodefault.row dl.dl-horizontal {
+	margin-bottom: 2px;
+}
+.nodefault.row dl.dl-horizontal dt {
+	width: 110px;
+}
+.nodefault.row dl.dl-horizontal dd {
+	margin-left: 120px;
+}
+
+#frontend {
+	height: auto !important;
+	min-height: 92%;
+	margin-bottom: 15px;
+}
+
+.footer {
+	padding: 0 0 15px 0;
+	clear: both;
+    position: relative;
+}
+.footer .container .row {
+	text-align: center;
+	margin: 15px 0 0 0;
+}
+
+.login-form {
+	margin: 0 auto;
+    max-width: 330px;
+    padding: 15px;
+}
+
+#product_details .right .attr-wrapper {
+	margin: 4px 0;
+}

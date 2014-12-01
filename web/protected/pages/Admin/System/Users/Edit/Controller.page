@@ -1,0 +1,6 @@
+<%@MasterClass="Application.layout.BlankLayout"%>
+<com:TContent ID="MainContent">
+<com:TCallback ID="saveUserBtn" onCallback="saveUser" />
+<div class="pagewrapper item-details-wrapper" id="details-div">
+</div>
+</com:TContent>

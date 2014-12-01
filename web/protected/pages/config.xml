@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<authorization>
+		<allow pages="*" users="@" />
+		<allow pages="FrontEnd.*" users="*" />
+		<allow pages="Admin.Home.HomeController" users="*" />
+		<allow pages="LibAdmin.Home.HomeController" users="*" />
+		<deny pages="*" users="?" />
+	</authorization>
+</configuration>

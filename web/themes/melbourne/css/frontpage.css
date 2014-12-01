@@ -1,0 +1,72 @@
+.header .navbar {
+	background: transparent url('../images/bg.png') no-repeat center 0;
+	background-size: cover;
+}
+#catelist .list-group-item {
+    background: #166589;
+    color: #fff;
+    filter: none;
+}
+#catelist .list-group-item:hover,
+.header .navbar-default .navbar-nav > li > a:hover,
+.panel.nodefault > .panel-heading,
+.panel.nodefault > .panel-heading .btn.dropdown-toggle {
+	background: #087369;
+	color: #fff;
+    filter: none;
+}
+.header .navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.nodefault.prolistshowcase .langlist .langitem a {
+	color: #fff;
+}
+.nodefault.prolistshowcase .langlist .langitem.active a,
+.nodefault.prolistshowcase .langlist .langitem a:hover {
+	background: #fff;
+	color: #087369;
+}
+
+.header #topmenulist {
+	background: #166589;
+}
+.header #topmenulist .navbar-nav > .active > a, 
+.header #topmenulist .navbar-nav > .active > a:focus,
+.header #topmenulist .navbar-nav > li > a:focus {
+    color: #087369;
+}
+
+.header #topmenulist .navbar-nav > .active > a:hover, 
+.header #topmenulist .navbar-nav > li > a:hover {
+	background: #087369;
+	color: #fff;
+}
+
+.logo {
+	margin: 10px 0 0 0;
+	height: 65px;
+	vertical-align: bottom;
+}
+.logo .media-object {
+	width: auto;
+	height: 60px;
+}
+.header .media-body.title{
+	display:none;
+}
+
+.topmenu {
+	margin: 10px 0 0 0;
+}
+
+.footer {
+	background: #262626;
+	color: #fff;
+}
+.footer a {
+	color: #fff;
+}
+.footer a:hover {
+	color: #ccc;
+}

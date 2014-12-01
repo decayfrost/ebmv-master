@@ -1,0 +1,19 @@
+<com:TContent ID="MainContent">
+<com:Application.controls.FancyBox.FancyBox />
+<com:TCallback ID="getItemsBtn" OnCallback="Page.getItems" />
+<div class="pagewrapper libadminpage orders">
+	<h4>Found (<span id="item-total-count">0</span>) orders: </h4>
+	<table class="table table-striped table-hover">
+		<thead>
+			<th>Order No.</th>
+			<th>Status</th>
+			<th>Items</th>
+			<th>Date</th>
+			<th>By</th>
+			<th>Comments</th>
+			<th>&nbsp;</th>
+		</thead>
+		<tbody id="item-list"></tbody>
+	</table>
+</div>
+</com:TContent>

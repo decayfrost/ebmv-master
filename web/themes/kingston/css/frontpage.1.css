@@ -1,0 +1,77 @@
+.header .navbar.navbar-default {
+	border: none;
+	background: #fff;
+	box-shadow: none;
+}
+
+.header .navbar-default .container > .row {
+	background: url("../images/banner.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+	background-size: 100% auto;
+}
+.header .navbar-default .mainmenu {
+	padding: 0px;
+}
+.header .navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+.header #topmenulist,
+.header .topmenu .navbar-nav,
+.nodefault.prolistshowcase .panel-heading {
+	background: url("../images/menu-bg.gif") repeat-x scroll center top #104164;
+	color: #fff;
+}
+.header #topmenulist .navbar-nav > .active > a, 
+.header #topmenulist .navbar-nav > .active > a:hover, 
+.header #topmenulist .navbar-nav > .active > a:focus,
+.header #topmenulist .navbar-nav > li > a:hover,
+.header #topmenulist .navbar-nav > li > a:focus {
+    background: url("../images/menu-hover.gif") repeat-x scroll center top #104164;
+    color: #fff;
+}
+
+
+.header .logo,
+.header .media-body {
+    margin-top: 20px;
+    height: 130px;
+    vertical-align: bottom;
+}
+.header .logo {
+	background: #fff;
+	padding: 5px;
+}
+.header .media-body h4 {
+    vertical-align: bottom;
+}
+.header .title {
+    display: none;
+}
+
+.header .topmenu {
+    margin: 10px 0 0 0;
+}
+
+.pageWrapper > .col-md-3 > .panel {
+	border: none;
+}
+
+#catelist .list-group-item {
+	background: #315F88;
+	color: #fff;
+	border: none;
+}
+
+.footer .container {
+	background: #2E5578;
+	color: #C1CCD7;
+	padding: 20px 30px 30px;
+	
+}
+#catelist .list-group-item:hover {
+	background: url("../images/menu-bg.gif") repeat-x scroll center top #104164;
+	color: #fff;
+}
+
+.pageWrapper.product_details_page {
+	background: #fff;
+}

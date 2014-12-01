@@ -1,0 +1,8 @@
+<com:TContent ID="MainContent">
+	<com:TCallback ID="getUrlBtn" OnCallback="getUrl" />
+	<com:TCallback ID="getCopiesBtn" OnCallback="updateProduct" />
+	<div class="pageWrapper product_details_page">
+	    <div id='product_details'>
+	    </div>
+	</div>
+</com:TContent>

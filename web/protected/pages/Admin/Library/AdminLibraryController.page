@@ -1,0 +1,7 @@
+<com:TContent ID="MainContent">
+	<com:Application.controls.FancyBox.FancyBox />
+	<com:Application.controls.ProductImportView.ProductImportView ID="importer" />
+	<div class="pagewrapper adminpage librarypage">
+		<div id='alllibraryDiv' class="items_div_wrapper"></div>
+	</div>
+</com:TContent>

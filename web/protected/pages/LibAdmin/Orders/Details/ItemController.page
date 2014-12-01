@@ -1,0 +1,7 @@
+<%@MasterClass="Application.layout.BlankLayout"%>
+<com:TContent ID="MainContent">
+<com:TCallback ID="delItemBtn" OnCallback="Page.delItem" />
+<com:TCallback ID="saveOrderBtn" OnCallback="Page.saveOrder" />
+<div class="pagewrapper libadminpage orderdetails" id="item-details">
+</div>
+</com:TContent>

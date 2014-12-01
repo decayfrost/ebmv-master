@@ -1,0 +1,8 @@
+<com:TContent ID="MainContent">
+<div class="pagewrapper adminpage homepage">
+	<div class="jumbotron">
+      <h1>Hello, <%= Core::getUser()->getPerson()%>!</h1>
+      <p>This is the backend of the EBMV. It will provide you a several tool to manage your library</p>
+    </div>
+</div>
+</com:TContent>

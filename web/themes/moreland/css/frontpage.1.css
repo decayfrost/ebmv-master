@@ -1,0 +1,79 @@
+.iconbtn .btnname small {
+	margin: 4px 0 0 0;
+	font-size: 11pt;
+}
+.header .navbar {
+	border: none;
+	box-shadow: none;
+	background: #fff;
+}
+.header .navbar .container:first-child {
+	background: transparent url('../images/banner-home-8.jpg') no-repeat 0 0;
+	background-size: 100% 137px;
+	height: 137px;
+}
+.logo {display: none;}
+#catelist .list-group-item {
+    background: #fcd106;
+    filter: none;
+}
+.panel.nodefault > .panel-heading,
+.panel.nodefault > .panel-heading .btn.dropdown-toggle {
+	background: #fcd106;
+    filter: none;
+}
+#catelist .list-group-item:hover,
+.header .navbar-default .navbar-nav > li > a:hover{
+	background: #EEE8AA;
+}
+.header .navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+
+.nodefault.prolistshowcase .langlist .langitem a {
+	color: #000;
+}
+.nodefault.prolistshowcase .langlist .langitem.active a,
+.nodefault.prolistshowcase .langlist .langitem a:hover {
+	background: #fff;
+}
+
+.header #topmenulist {
+	background: #fcd106;
+}
+.header #topmenulist .navbar-nav > .active > a, 
+.header #topmenulist .navbar-nav > .active > a:focus,
+.header #topmenulist .navbar-nav > li > a:focus {
+}
+
+.header #topmenulist .navbar-nav > .active > a:hover, 
+.header #topmenulist .navbar-nav > li > a:hover,
+.header #topmenulist .navbar-nav > .active > a:focus, 
+.header #topmenulist .navbar-nav > li > a:focus {
+	background: #EEE8AA;
+}
+
+.logo {
+	margin: 10px 0 0 0;
+	height: 93px;
+	vertical-align: bottom;
+}
+.logo .media-object {
+	width: auto;
+	height: 80px;
+}
+.header .media-body.title{
+	display:none;
+}
+
+.topmenu {
+	padding: 10px 0 0 0;
+}
+.header .navbar-default .topmenu .navbar-nav > li > a {
+	color: #fff;
+	border-radius: 15px;
+}
+.header .navbar-default .topmenu .navbar-nav > li > a:hover {
+	background: #EEE8AA;
+	color: #000;
+}

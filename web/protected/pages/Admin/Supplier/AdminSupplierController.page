@@ -1,0 +1,5 @@
+<com:TContent ID="MainContent">
+	<div class="pagewrapper adminpage supplierpage">
+		<div id = 'allSupplierDiv' class="items_div_wrapper"></div>
+	</div>
+</com:TContent>

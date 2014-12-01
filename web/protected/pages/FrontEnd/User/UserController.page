@@ -1,0 +1,21 @@
+<com:TContent ID="MainContent">
+    <com:TCallback ID="getProductsBtn" OnCallback="getProducts" />
+    <com:TCallback ID="removeFromShelfBtn" OnCallback="removeFromShelf" />
+    <com:TCallback ID="borrowItemBtn" OnCallback="borrowItem" />
+    <com:TCallback ID="returnItemBtn" OnCallback="returnItem" />
+	<div class="pageWrapper userpage row">
+		<div class="col-md-3">
+			<div class="panel panel-default">
+				<div class="panel-heading">Welcome, <%= Core::getUser()->getPerson() %></div>
+				<div class="list-group">
+					<a id="mybookshelfbtn" href="javascript:void(0);" class="list-group-item active iconbtn" onclick="pageJs.showBookShelf();">
+						<span class="btnname">我的书架/我的書架<small>My Bookshelf</small></span>
+					</a>
+					<com:TLinkButton ID="logout" OnClick="logout" Text="Logout" CssClass="list-group-item"/>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-9 panel-group" id="resultdiv">
+		</div>
+	</div>
+</com:TContent>

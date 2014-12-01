@@ -1,0 +1,45 @@
+<com:TContent ID="MainContent">
+    <com:TCallback ID="getProductsBtn" OnCallback="getProducts" />
+    <div class="pagewrapper products">
+	    <div class="row">
+	        <div class="maincontent col-md-9 col-md-push-3" role="main">
+	       		 <div class="well well-sm">
+		            <div class="row">
+		            	<div class="col-xs-8">
+							<div class="input-group">
+								<input type="search" class="form-control" id="searchtxt" 
+									placeholder="Search Your <%= $this->type instanceof ProductType ? $this->type->getName() : 'items' %> by title, author or ISBN"
+									onkeydown="return pageJs.keydown(event, function(){ $('searchbtn').click();})"
+								/>
+								<span class="input-group-btn">
+									<span class="btn btn-default" id='searchbtn' OnClick="pageJs.searchProducts('searchtxt')" title="搜索/搜索/Search">
+										<span class="glyphicon glyphicon-search"></span>
+									</span>
+								</span>
+							</div>
+		            	</div>
+		            	<div class="col-xs-4">
+		            		<div class="btn-group">
+		            			<button type="button" class="btn btn-default" onclick="pageJs.getProductItemFunc='_getProductGridItem'; pageJs.showProducts(true); " title="格子查看 /格子查看 / Grid View"><span class="glyphicon glyphicon-th-large"></span></button>
+		            			<button type="button" class="btn btn-default" onclick="pageJs.getProductItemFunc='_getProductListItem'; pageJs.showProducts(true); " title="列表查看 /列表查看 / List View"><span class="glyphicon glyphicon-list"></span></button>
+		            		</div>
+		            	</div>
+		            </div>
+		        </div>
+	            <div class="clearfix"></div>
+	            <div id="productlist">
+	            </div>
+	        </div>
+	        <div class="col-md-3 col-md-pull-9">
+	            <div class="panel panel-default">
+	                <div class="panel-heading">
+	                	类别 / 類別 / <small>Subjects</small>
+	                </div>
+	                <div id="catelist" class="list-group">
+	                    <%= $this->getCategories() %>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</com:TContent>

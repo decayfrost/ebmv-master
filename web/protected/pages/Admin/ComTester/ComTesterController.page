@@ -1,0 +1,60 @@
+<com:TContent ID="MainContent">
+<div class="pagewrapper adminpage comtesterpage">
+	<com:TClientScript>
+		function preSubmit()
+		{
+			if($('<%= $this->requestData->getClientId()%>').value.replace(' ','')=='')
+			{
+				alert('No request message!');
+				return false;
+			}
+			return true;
+		}
+	</com:TClientScript>
+	<com:TPanel style="padding:10px;" GroupingText="Request">
+			<b>URL:</b><com:TActiveTextBox ID="url" style="width:75%"/> 
+			<com:TActiveButton ID="xmlBtn" OnClick="Page.testDataXml" Text="Submit" Attributes.OnClick="return preSubmit();">
+				<prop:ClientSide OnLoading="$('hideThisPanelBtn').click();$('loadingImg').show();" OnComplete="$('loadingImg').hide();$('<%= $this->result->getClientId() %>').focus();" />
+			</com:TActiveButton>
+			<img id="loadingImg" src="/themes/images/ajax-loader.gif" style="display:none;"/>
+			<br /><br />
+			
+			<com:TTabPanel>
+				<com:TTabView Caption="Input" ID="inputTab">
+					<h3>Request (XML or JSON):</h3>
+					<com:TActiveTextBox ID="requestData" TextMode="MultiLine" Rows="18" style="width:90%"/>
+					<br />
+					<h3>Result:</h3>
+					<com:TActiveTextBox ID="result" TextMode="MultiLine" Rows="18" style="width:90%"/>
+				</com:TTabView>
+				<com:TTabView Caption="History">
+					<h3>History:</h3>
+					<script type="text/javascript">
+						function popFields(index)
+						{
+							$('fillBtn_' + index).disabled='true';
+							$('fillBtn_' + index).value='filling...';
+							$('<%= $this->Page->historyListIndex->getClientId()%>').value=index;
+							$('<%= $this->Page->popInfoBtn->getClientId()%>').click();
+						}
+					</script>
+					<com:TActiveHiddenField ID="historyListIndex" value="0"/>
+					<com:TActiveButton ID="popInfoBtn" OnClick="Page.popInfo" style="display:none;">
+						<prop:ClientSide OnLoading="" 
+								OnComplete="
+										var index = $('<%= $this->Page->historyListIndex->getClientId()%>').value;
+										$('<%= $this->Page->historyListIndex->getClientId()%>').value='0';
+										$('<%= $this->Page->inputTab->getClientId()%>').focus();
+										$('fillBtn_' + index).disabled='';
+										$('fillBtn_' + index).value='fill with this';
+										" />
+					</com:TActiveButton>
+					<div style="width:90%;height:600px;border:1px #cccccc solid;overflow:auto;">
+						<com:TActiveLabel ID="historyListLabel" />
+					</div>
+				</com:TTabView>
+			</com:TTabPanel>
+	</com:TPanel>
+	<com:TActiveLabel ID="xmlOutput" />
+</div>
+</com:TContent>

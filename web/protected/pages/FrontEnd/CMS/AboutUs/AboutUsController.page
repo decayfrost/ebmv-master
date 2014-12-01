@@ -1,0 +1,45 @@
+<com:TContent ID="MainContent">
+	<div class="pageWrapper helppage">
+		<div class="page-header">
+			<h3>关于我们 / 關於我們  <small>About Us</small> </h3>
+		</div>
+		<p class="text-justify">
+			Established in 1996 Books Music & Videos is a library supplier specialised in Chinese language materials and associated services. We supply Simplified and Traditional Chinese books and AV products published or produced in the Great China region. We also provide selection, cataloguing and end-processing service when required.
+		</p>	
+		<p class="text-justify">eBMV is our latest product that enables library patrons to access Chinese language e-books, e-magazines, e-newspapers and other electronic resources through one integrated user interface.</p>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="row">
+						<h4>Contact: <%= $this->getSystemSettings(SystemSettings::TYPE_CONTACT_NAME) %></h4>
+					</div>
+					<div class="row" tile="Phone">
+						<div class="col-sm-2 text-right">
+							<span class="glyphicon glyphicon-phone-alt"></span>:
+						</div>
+						<div class="col-sm-8">
+							<a tile="Phone" href="tel:<%= $this->getSystemSettings(SystemSettings::TYPE_CONTACT_PHONE) %>"><%= $this->getSystemSettings(SystemSettings::TYPE_CONTACT_PHONE) %></a>
+						</div>
+					</div>
+					<div class="row" tile="Fax">
+						<div class="col-sm-2 text-right">
+							<span class="glyphicon glyphicon-print"></span>:
+						</div>
+						<div class="col-sm-8">
+							<a tile="Fax" href="fax:<%= $this->getSystemSettings(SystemSettings::TYPE_CONTACT_FAX) %>"><%= $this->getSystemSettings(SystemSettings::TYPE_CONTACT_FAX) %></a>
+						</div>
+					</div>
+					<div class="row" tile="Mobile">
+						<div class="col-sm-2 text-right">
+							<span class="glyphicon glyphicon-phone"></span>:
+						</div>
+						<div class="col-sm-8">
+							<a tile="Mobile" href="tel:<%= $this->getSystemSettings(SystemSettings::TYPE_CONTACT_MOBILE) %>"><%= $this->getSystemSettings(SystemSettings::TYPE_CONTACT_MOBILE) %></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</com:TContent>

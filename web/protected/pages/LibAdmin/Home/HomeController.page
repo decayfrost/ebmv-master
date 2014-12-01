@@ -1,0 +1,24 @@
+<com:TContent ID="MainContent">
+<div class="pagewrapper libadminpage homepage">
+	<div class="jumbotron" style="padding: 20px">
+		<strong>Welcome to the library admin dashboard, <%= Core::getUser()->getPerson() %>,</strong><br />
+		<small>
+			This page will give you an over all view of your libary, as well as some functions to manage your library. Here you can :<br />
+			<ul>
+				<li><a href="/libadmin/items.html"><strong>Order new books/magzines/newspapers</strong></a></li>
+				<li><a href="/libadmin/orders.html"><strong>View your order history</strong></a></li>
+				<li><a href="/libadmin/statics.html"><strong>View the statics</strong></a></li>
+			</ul>
+		</small>
+	</div>
+	<div class="row">
+		<div class="col-lg-7">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<iframe src="/libadmin/statics/libraryviews.html" id="iframe1" marginheight="0" frameborder="0" width='100%' height="400px" scrolling='no' ></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</com:TContent>

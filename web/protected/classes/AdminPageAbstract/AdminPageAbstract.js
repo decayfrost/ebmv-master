@@ -1,0 +1,1 @@
+var AdminPageJs=new Class.create();AdminPageJs.prototype=Object.extend(new FrontPageJs(),{});

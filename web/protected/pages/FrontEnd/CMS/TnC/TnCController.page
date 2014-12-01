@@ -1,0 +1,95 @@
+<com:TContent ID="MainContent">
+	<div class="pageWrapper helppage">
+		<div class="page-header">
+			<h3>Terms & Conditions</h3>
+		</div>
+		<p class="text-justify">
+			<ol>
+				<li>
+					<dl>
+						<dt>Service Delivered Under This Contract:</dt>
+						<dd class="text-justify"><strong>eBMV</strong> user interface aggregates Chinese language e-resources provided by multiple suppliers (hereinafter referred as "<strong>Suppliers</strong>") from Mainland China, Hong Kong and Taiwan.</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>Intellectual Property Right:</dt>
+						<dd class="text-justify">The <strong>Suppliers</strong> are either the owner of the relevant e-resources or are authorised to commercially distribute these e-resources. <strong>eBMV</strong> user interface is a product of Books Music & Videos (hereinafter referred as "<strong>BMV</strong>")</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>BMV:</dt>
+						<dd class="text-justify"><strong>BMV</strong> distributes e-resources from the <strong>Suppliers</strong> via <strong>eBMV</strong> in Australia and New Zealand.</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>Acceptable Use:</dt>
+						<dd class="text-justify">
+							<ul>
+								<li>These e-resources are intended to be used by public libraries in Australia and New Zealand as part of the above institutions’ service to the community. The libraries should use the product in good faith, and agree not to modify, adapt, traverse or otherwise attempt to conduct the infringement to the intellectual property right associated with the e-resources.</li>
+								<li>The e-resources shall be accessed by library members whose library has acquired or has been granted usage rights of these e-resources.</li>
+								<li>No commercial use of these e-resources by library members is permitted unless it is pre-approved by the relevant e-resource provider.</li>
+								<li>Library members shall not attempt to break e-resource encryption mechanisms and authentication process. Such activities will be reported and may result in access suspension.</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>Quality of the Product:</dt>
+						<dd class="text-justify"><strong>BMV</strong> guarantee that the provided products correspond with the quality and specifications given in all respects.</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>Availability:</dt>
+						<dd class="text-justify"><strong>eBMV</strong> operates 24 X 7. Regular maintenance and new contents upload occur in early morning off-peak hour with minimum impact to service continuity.</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>Technical Support and Post-Sale Service:</dt>
+						<dd class="text-justify">
+							<ul>
+								<li><strong>BMV</strong> guarantees to provide lifetime technic maintenance of the product. Contact details for technical support are on eBMV website under Contact Us, and in User Manual. General enquies please email to: <%= $this->getSystemSettings(SystemSettings::TYPE_CONTACT_EMAIL) %></li>
+								<li>The suppliers shall provide free upgrade versions of the product to paying customers .</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>Privacy:</dt>
+						<dd class="text-justify">Neither eBMV nor Suppliers have access to personal details of library patrons. Usage statistics based on library card numbers will be collected and reported back to the relevant library as required.</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>Updates:</dt>
+						<dd class="text-justify"><strong>eBMV</strong> and <strong>Suppliers</strong> reserve the right to change the Terms and Conditions at any time.</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>Force Majeure:</dt>
+						<dd class="text-justify"><strong>BMV</strong> and <strong>Suppliers</strong> shall not be responsible if the service or part of it, and the telecommunication infrastructure used to deliver the service is down due to force majeure. Force majeure herein means situations which cannot be foreseen, avoided or overcome, such as but not limited to typhoon, earthquake, flood, strike, riot, war, and change of government regulations. The party that is unable to fulfil the contract due to force majeure shall notify the other party in time in order to reduce losses possibly inflicted to the other parties</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>Acceptance of Terms & Conditions:</dt>
+						<dd class="text-justify">Please read these terms of use carefully before you start to use the site. By using <strong>eBMV</strong> service, you indicate that you accept these terms of use and that you agree to abide by them.</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>Your Concerns:</dt>
+						<dd class="text-justify">If you have any concerns about material which appears on our site, please contact: <%= $this->getSystemSettings(SystemSettings::TYPE_CONTACT_EMAIL) %></dd>
+					</dl>
+				</li>
+			</ol>
+		</p>	
+	</div>
+</com:TContent>

@@ -1,0 +1,22 @@
+.header .navbar-default,
+.panel.nodefault > .panel-heading,
+.panel.nodefault > .panel-heading .btn.dropdown-toggle {
+    background: #213c81;
+    color: #fff;
+    filter: none;
+}
+.header .navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.header #topmenulist {
+	background: #6a8bbe
+}
+
+.header #topmenulist .navbar-nav > .active > a, 
+.header #topmenulist .navbar-nav > .active > a:hover, 
+.header #topmenulist .navbar-nav > .active > a:focus,
+.header #topmenulist .navbar-nav > li > a:hover,
+.header #topmenulist .navbar-nav > li > a:focus {
+    color: #213c81;
+}

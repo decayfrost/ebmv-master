@@ -1,0 +1,27 @@
+.resultWrapper{width:100%;padding:0px;margin:0px;}
+.resultWrapper .title{margin:0px;padding:0px;}
+.resultWrapper .title i{font-size:12px;}
+.resultWrapper .title i:hover{background:lightblue;}
+
+.resultWrapper .summary{margin:3px 0 10px 0;padding:4px;}
+.resultWrapper .summaryPassed{background:green;color:white;}
+.resultWrapper .summaryFailed{background:orange;}
+.resultWrapper .summaryError{background:red;color:white;}
+.resultWrapper .summary span{display:inline-block;margin:0 15px 0 0;}
+
+.resultWrapper .resultDiv{border:2px #cccccc solid;margin:25px 0 0 0;}
+.resultWrapper .resultDiv .resultTitle{background:#cccccc;margin:0px;padding:0px;cursor:pointer;}
+.resultWrapper .resultDiv table.errorResult td{padding:2px;}
+.resultWrapper .resultDiv table.errorResult thead{background:black;color:white;}
+.resultWrapper .resultDiv .errorResult .alertItem{background:#eeeeee;}}
+
+.resultWrapper .fancyErrorWrapper{margin:0px;padding:8px;}
+.resultWrapper .fancyErrorWrapper .title{font-weight: bold;color:red;margin:0px;padding:0px;cursor:pointer;}
+.resultWrapper .fancyErrorWrapper .title:hover{text-decoration: underline;}
+.resultWrapper .fancyErrorWrapper .trace{font-size:11px;}
+.resultWrapper .fancyErrorWrapper .trace .item:hover,
+.resultWrapper .fancyErrorWrapper .trace .itemAlter:hover{background:lightblue;}
+
+.funDebugWrapper{border:1px #cccccc dotted;border-radius:5px;margin: 0 0 15px 0; font-size: 13px;}
+.funDebugWrapper .funDebugTitle{background:#cccccc;padding: 3px 0 3px 10px;font-weight: bold;}
+.funDebugWrapper .funDebugContent{padding:10px;}

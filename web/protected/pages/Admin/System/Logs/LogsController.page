@@ -1,0 +1,6 @@
+<com:TContent ID="MainContent">
+	<div class="pagewrapper adminpage logs">
+		<div class="pagetitle">Logs</div>
+		<div id='itemListDiv' class="items_div_wrapper"></div>
+	</div>
+</com:TContent>

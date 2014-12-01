@@ -1,0 +1,26 @@
+<com:TContent ID="MainContent">
+    <com:TCallback ID="loginBtn" OnCallback="login" />
+	<div class="login-form LoginPanel" role="form">
+		<h2 class="form-signin-heading"></h2>
+		<div class="row msgpanel"></div>
+		<div class="form-group">
+			<label for="username">图书馆卡号/圖書館卡號/Library Card No.</label>
+			<div class="input-group">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span> 
+				<input id="username" type="text" class="form-control username" placeholder="Username" onkeydown="pageJs.keydown(event, function(){$('loginbtn').click();});" required autofocus/>
+			</div>
+		</div> 
+		<div class="form-group">
+			<label for="password">密码/密碼/PIN</label>
+			<div class="input-group">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span> 
+				<input id="password" type="password" class="form-control password" placeholder="Password" onkeydown="pageJs.keydown(event, function(){$('loginbtn').click();});" required />
+			</div>
+		</div> 
+		<button id="loginbtn" class="btn btn-lg btn-primary btn-block iconbtn" type="button" onclick="pageJs.login(this);">
+			<div class="btnname">登陆/登陸
+				<small>Sign in</small>
+			</div>
+		</button>
+	</div>
+</com:TContent>
